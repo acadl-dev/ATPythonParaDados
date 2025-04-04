@@ -4,11 +4,11 @@
 def conta_itens(lista_compras):
     contagem = {}
     for item in lista_compras:
-        item = item.lower()  # Convertendo para minúsculas
+        item = item.lower()  
         contagem[item] = contagem.get(item, 0) + 1
     return contagem
 
-# Exemplo de uso
+
 lista = ["Bolo", "tomate", "Listerine", "Tomate", "Jujuba", "Melancia"]
 resultado = conta_itens(lista)
 print(resultado)

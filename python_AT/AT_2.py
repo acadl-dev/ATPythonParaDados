@@ -3,14 +3,15 @@
 def palavras_opostas(oposto: dict, palavra1: str, palavra2: str) -> bool:
     return oposto.get(palavra1) == palavra2 or oposto.get(palavra2) == palavra1
 
-# Exemplo de uso
+
 oposto = {
-    "quente": "frio",
+    "longe": "perto",
     "claro": "escuro",
-    "grande": "pequeno",
-    "feliz": "triste"
+    "alto": "baixo",
+    "doce": "azedo"
 }
 
-print(palavras_opostas(oposto, "quente", "frio"))  # True
-print(palavras_opostas(oposto, "feliz", "alegre")) # False
-print(palavras_opostas(oposto, "pequeno", "grande")) # True
+print(palavras_opostas(oposto, "quente", "frio"))  # False
+print(palavras_opostas(oposto, "claro", "escuro")) # True
+print(palavras_opostas(oposto, "pequeno", "grande")) # False
+print(palavras_opostas(oposto, "doce", "azedo")) # True
